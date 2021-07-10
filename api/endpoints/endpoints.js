@@ -9,7 +9,6 @@ const blogposts = require('./blogs')
 const battlepass = require('./battlepass')
 const dm = require('./dm')
 const  latestversion  = require('./latestversion')
-const moo = require('./moo')
 
 const appRouter = (app, fs) => {
 
@@ -30,7 +29,6 @@ const appRouter = (app, fs) => {
      battlepass(app, fs);
      dm(app, fs);
      latestversion(app, fs);
-     moo(app, fs);
 };
 
 module.exports = appRouter;
